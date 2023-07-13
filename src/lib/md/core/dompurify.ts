@@ -1,4 +1,4 @@
-import { sanitize } from 'isomorphic-dompurify'
+import DOMPurify from 'isomorphic-dompurify'
 import type { Config } from 'isomorphic-dompurify'
 
 const config: Config = {
@@ -55,7 +55,7 @@ const config: Config = {
  * @returns string
  */
 function sanitizeHTMLText(dirtyHtmlText: string) {
-  return sanitize(dirtyHtmlText, config) as string
+  return DOMPurify.sanitize(dirtyHtmlText, config) as string
 }
 
 export { sanitizeHTMLText }
