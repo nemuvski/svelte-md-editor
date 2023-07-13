@@ -1,5 +1,5 @@
 <script lang="ts">
-  import debounce from 'just-debounce-it';
+  import debounce from 'just-debounce-it'
   import { sanitizeHTMLText, marked } from './core'
 
   let previewValue = ''
