@@ -1,6 +1,6 @@
 import { marked } from 'marked'
 import { removeTagText, escapeText } from './helpers'
-import { customHighlight } from '$lib/md/core/highlight'
+import { customHighlight } from './highlight'
 
 /**
  * マークダウンからHTMLへ変換する際に、pre,code要素の言語情報部分を分割するときの区切り文字
@@ -97,4 +97,9 @@ marked.setOptions({
   breaks: true,
 })
 
-export { marked }
+function markdownToHTMLText(mdText: string) {
+  // NOTE: 末尾に改行コードが入るので、trim()で削除する
+  return marked(mdText).trim()
+}
+
+export { markdownToHTMLText }

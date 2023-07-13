@@ -1,11 +1,11 @@
 <script lang="ts">
   import debounce from 'just-debounce-it'
-  import { sanitizeHTMLText, marked } from './core'
+  import { sanitizeHTMLText, markdownToHTMLText } from './core'
 
   let previewValue = ''
 
   const textareaInputHandler = debounce((e) => {
-    previewValue = sanitizeHTMLText(marked(e.target.value))
+    previewValue = sanitizeHTMLText(markdownToHTMLText(e.target.value))
   }, 800)
 </script>
 
