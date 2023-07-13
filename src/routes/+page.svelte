@@ -1,9 +1,9 @@
 <script lang="ts">
-  const message = 'It works!'
+  import MarkdownEditor from "$lib/md/MarkdownEditor.svelte";
 </script>
 
 <svelte:head>
-  <title>Svelte App</title>
+  <title>Svelte Markdown Editor</title>
 </svelte:head>
 
-<p>{message}</p>
+<MarkdownEditor />
