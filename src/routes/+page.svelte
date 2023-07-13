@@ -1,5 +1,5 @@
 <script lang="ts">
-  import MarkdownEditor from "$lib/md/MarkdownEditor.svelte";
+  import MarkdownEditor from '$lib/md/MarkdownEditor.svelte'
 </script>
 
 <svelte:head>

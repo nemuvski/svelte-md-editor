@@ -6,13 +6,13 @@
   let previewValue = ''
 
   const textareaInputHandler = debounce((event: Event) => {
-    const { value } = event .target as HTMLTextAreaElement
+    const { value } = event.target as HTMLTextAreaElement
     previewValue = sanitizeHTMLText(markdownToHTMLText(value))
   }, 800)
 </script>
 
 <div class="md">
-  <textarea class="md__textarea" placeholder="markdown text" on:input={textareaInputHandler}></textarea>
+  <textarea class="md__textarea" placeholder="markdown text" on:input={textareaInputHandler} />
   <div class="md__preview">
     <!-- NOTE: サニタイズした値を出力しているため、eslintの警告は無視 -->
     <!-- eslint-disable-next-line svelte/no-at-html-tags -->
