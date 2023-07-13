@@ -5,8 +5,9 @@
 
   let previewValue = ''
 
-  const textareaInputHandler = debounce((e) => {
-    previewValue = sanitizeHTMLText(markdownToHTMLText(e.target.value))
+  const textareaInputHandler = debounce((event: Event) => {
+    const { value } = event .target as HTMLTextAreaElement
+    previewValue = sanitizeHTMLText(markdownToHTMLText(value))
   }, 800)
 </script>
 
