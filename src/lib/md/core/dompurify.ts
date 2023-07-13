@@ -13,6 +13,7 @@ const config: Config = {
     'div',
     'p',
     'br',
+    'h1',
     'h2',
     'h3',
     'h4',
@@ -40,7 +41,6 @@ const config: Config = {
     tagNameCheck: null,
     attributeNameCheck: null,
     allowCustomizedBuiltInElements: false,
-
   },
   /**
    * @see {@link https://github.com/cure53/DOMPurify/issues/288}
