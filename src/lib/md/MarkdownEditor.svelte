@@ -1,4 +1,5 @@
 <script lang="ts">
+  import 'highlight.js/styles/hybrid.css'
   import debounce from 'just-debounce-it'
   import { sanitizeHTMLText, markdownToHTMLText } from './core'
 
