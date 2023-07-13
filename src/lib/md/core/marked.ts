@@ -29,6 +29,11 @@ customRenderer.link = (href, title, text) => {
   return `<a rel="noopener nofollow noreferrer" target="_blank" href="${url}">${label}</a>`
 }
 
+// デフォルトだと見出しタグにid属性が付与されるため、カスタムで定義
+customRenderer.heading = (text, level) => {
+  return `<h${level}>${text}</h${level}>`
+}
+
 // インラインのcode要素に属性を付与
 customRenderer.codespan = (code) => {
   return `<code translate="no">${code}</code>`
