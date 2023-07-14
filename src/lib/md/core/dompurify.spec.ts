@@ -27,6 +27,12 @@ describe('dompurify.ts', () => {
     expect(sanitizeHTMLText(`<blockquote></blockquote>`)).toBe(`<blockquote></blockquote>`)
     expect(sanitizeHTMLText(`<pre><code></code></pre>`)).toBe(`<pre><code></code></pre>`)
     expect(sanitizeHTMLText(`<small></small>`)).toBe(`<small></small>`)
+    expect(sanitizeHTMLText(`<img src="https://placehold.co/600x400?text=Hello\\nWorld" />`)).toBe(
+      `<img src="https://placehold.co/600x400?text=Hello\\nWorld">`
+    )
+    expect(sanitizeHTMLText(`<img src="https://placehold.co/600x400?text=Hello\\nWorld">`)).toBe(
+      `<img src="https://placehold.co/600x400?text=Hello\\nWorld">`
+    )
 
     expect(sanitizeHTMLText(`<p translate="no"></p>`)).toBe(`<p translate="no"></p>`)
     expect(sanitizeHTMLText(`<p class="test"></p>`)).toBe(`<p class="test"></p>`)

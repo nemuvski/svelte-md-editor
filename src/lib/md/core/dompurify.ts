@@ -6,7 +6,7 @@ const config: Config = {
   RETURN_DOM: false,
   RETURN_DOM_FRAGMENT: false,
   // 許可する属性
-  ALLOWED_ATTR: ['rel', 'target', 'href', 'class', 'translate'],
+  ALLOWED_ATTR: ['rel', 'target', 'href', 'class', 'translate', 'src'],
   // 許可するタグ
   ALLOWED_TAGS: [
     'span',
@@ -31,6 +31,7 @@ const config: Config = {
     'code',
     'pre',
     'small',
+    'img',
   ],
   // aria属性は許可しない
   ALLOW_ARIA_ATTR: false,
