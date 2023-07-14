@@ -1,0 +1,132 @@
+.article {
+  > * {
+    + * {
+      margin-top: 1em;
+    }
+
+    + h1,
+    + h2,
+    + h3,
+    + h4,
+    + h5,
+    + h6 {
+      margin-top: 2em;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1.4em;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  h5 {
+    font-size: 1.05em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  p,
+  pre,
+  ul,
+  ol,
+  blockquote {
+    line-height: 1.9;
+  }
+
+  pre {
+    font-size: 0.9em;
+
+    > code {
+      overscroll-behavior-x: contain;
+      padding: 0.75em 1em;
+    }
+  }
+
+  // hljsがついていない（つまり、インラインのcodeと判断できる）
+  code:not([class]) {
+    display: inline;
+    padding: 0.15em 0.35em;
+    background-color: var(--theme-color--inline-code-bg);
+  }
+
+  a {
+    // inline指定 https://qiita.com/7note/items/c0dbb89d8d35ef2faa50
+    display: inline;
+    color: var(--theme-color--link);
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  hr {
+    margin: 2em 0;
+    border-top: 0.1em solid var(--theme-color--border);
+  }
+
+  del {
+    color: var(--theme-color--text-sub);
+  }
+
+  ul,
+  ol {
+    padding-left: 1.85em;
+    list-style-position: outside;
+
+    ul,
+    ol {
+      margin: 0.35em 0;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  blockquote {
+    padding: 0.2em 0 0.2em 0.5em;
+    border-left: 0.325em solid var(--theme-color--border);
+    color: var(--theme-color--text-sub);
+    font-style: oblique;
+
+    & blockquote {
+      margin-top: 0.75em;
+    }
+  }
+
+  .code-frame-tips {
+    display: inline-block;
+    padding: 0.4em 0.6em;
+    background-color: var(--theme-color--inline-code-bg);
+    font-size: 0.875em;
+    line-height: 1.15;
+  }
+}

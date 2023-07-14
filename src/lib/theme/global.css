@@ -1,8 +1,12 @@
 :root {
   --theme-color--text: #000;
+  --theme-color--text-sub: #666;
   --theme-color--background: #fff;
 
+  --theme-color--link: #0099ff;
   --theme-color--textarea: #fafafa;
+  --theme-color--border: #e0e0e0;
+  --theme-color--inline-code-bg: #e0e0e0;
 }
 
 :root {
