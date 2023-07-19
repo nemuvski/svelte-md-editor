@@ -1,8 +1,8 @@
 <script>
-  import 'nacss'
-  import '$lib/theme/global.css'
+  import GlobalStyles from '$lib/theme/GlobalStyles.svelte'
 </script>
 
+<GlobalStyles />
 <main>
   <slot />
 </main>
