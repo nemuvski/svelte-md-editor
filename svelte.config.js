@@ -23,8 +23,6 @@ const config = {
       strict: true,
     }),
   },
-
-  trailingSlash: 'always',
 }
 
 export default config
