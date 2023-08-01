@@ -1,6 +1,7 @@
 import { marked } from 'marked'
 import { removeTagText, escapeText } from './helpers'
 import { customHighlight } from './highlight'
+import type { Token } from 'marked'
 
 /**
  * マークダウンからHTMLへ変換する際に、pre,code要素の言語情報部分を分割するときの区切り文字
@@ -79,7 +80,7 @@ customRenderer.code = function (code, info) {
  *
  * @param token
  */
-function customWalkTokens(token: marked.Token) {
+function customWalkTokens(token: Token) {
   // HTMLの直打ちは空文字にする（内容を削除する）
   if (token.type === 'html') {
     if (token.text) {

@@ -19,14 +19,13 @@
     "highlight.js": "^11.8.0",
     "isomorphic-dompurify": "^1.8.0",
     "just-debounce-it": "^3.2.0",
-    "marked": "^5.1.1",
+    "marked": "^6.0.0",
     "nacss": "^2.0.1"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^2.0.2",
     "@sveltejs/kit": "^1.22.3",
     "@testing-library/svelte": "^4.0.3",
-    "@types/marked": "^5.0.1",
     "@types/node": "^20.4.4",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
